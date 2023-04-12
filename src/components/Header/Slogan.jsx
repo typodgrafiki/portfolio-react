@@ -39,14 +39,11 @@ function Slogan() {
     
     useEffect(() => {
         const intervalId = setInterval(() => {
-            
             setFadeOut(1);
-            
             const changeText = setTimeout(function() {
                 setIndex((prevIndex) => (prevIndex + 1) % sloganArray.length);            
                 setFadeOut(0);
-            }, 500);
-            
+            }, 300);
             return () => clearTimeout(changeText);
             
         }, 3000);
@@ -64,7 +61,6 @@ function Slogan() {
             <span className={fadeOut ? 'fadeout' : ''}>
                 {currentText}
             </span>
-            
         </h1>
     )
 }

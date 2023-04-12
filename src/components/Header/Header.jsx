@@ -1,3 +1,4 @@
+import MenuLayer from './MenuLayer'
 import logo from '../../assets/logo.svg'
 import Slogan from './Slogan'
 import Video from './Video'
@@ -13,7 +14,7 @@ function Header() {
                         Lorem ipsum
                     </a>
                 </div>
-                <button className="menu relative"><span></span><span></span><span></span></button>
+                <MenuLayer />
             </div>
             <div className="content flex">
                 <div className="left">
