@@ -72,6 +72,17 @@
             font-size: clamp(4rem, 8vw, 8rem);
             line-height: .85;
             margin: 0;
+            
+            > span:not(.font-light)
+            {
+                display: block;
+                transition: opacity .3s ease;
+                
+                &.fadeout
+                {
+                    opacity: 0;
+                }
+            }
         }
         
         .left 
