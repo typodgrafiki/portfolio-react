@@ -1,42 +1,41 @@
 import logo from '../../assets/logo.svg'
-import './header.scss'
+import Slogan from './Slogan'
+import Video from './Video'
+import './_header.scss'
 
 function Header() {
     return (
-        <div className="header flex justify-between">
+        <div id="top" className="header flex justify-between">
             <div className="top flex justify-between">
                 <div className="logo flex align-center">
-                    <img src={logo} className="logo" alt="Lorem logo" />    
-                    Lorem ipsum
+                    <a href="#top">
+                        <img src={logo} className="logo" alt="Lorem logo" />    
+                        Lorem ipsum
+                    </a>
                 </div>
-                <div className="menu">
-                    Menu hamburger
-                </div>
+                <button className="menu relative"><span></span><span></span><span></span></button>
             </div>
             <div className="content flex">
                 <div className="left">
-                    <h1>We create Awesome CODE / FUNCTIONS / DEVELOPMENT / NFT</h1>    
+                    <Slogan />
                     <p>
-                        <span>Latest blog from</span>
-                        <span>2023/04/10</span>
+                        <span className="white-btn">Latest blog from</span>
+                        <span className="date">2023/04/10</span>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam, nostrum voluptatibus reprehenderit cupiditate, animi porro autem exercitationem quos, et ipsum aliquam nulla provident at odit sint totam error voluptas!
                     </p>
                 </div>
                 <div className="right">
                     <nav>
                         <ul>
-                            <li>Home</li>
-                            <li>Our services</li>
-                            <li>About Us</li>
-                            <li>Portfolio</li>
-                            <li>Reviews</li>
-                            <li>Contact Us</li>
+                            <li><a href="#top">Home</a></li>
+                            <li><a href="#services">Our services</a></li>
+                            <li><a href="#us">About Us</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
                         </ul>
                     </nav>
-                    <div className="video">
-                        <button>btn</button>
-                        <video>video</video>
-                    </div>
+                    <Video />
                 </div>
             </div>
         </div>
