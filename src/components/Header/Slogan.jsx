@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { keyframes } from "@emotion/react";
-import styled from "@emotion/styled";
 
 const sloganArray = ["CODE", "FUNCTIONS", "DEVELOP", "NFT"];
-
 
 function Slogan() {
     
@@ -12,7 +9,7 @@ function Slogan() {
     
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setIndex((prevIndex) => (prevIndex + 1) % sloganArray.length);
+            setIndex((prevIndex) => (prevIndex + 1) % sloganArray.length);    
         }, 3000);
         return () => clearInterval(intervalId);
     }, []);
