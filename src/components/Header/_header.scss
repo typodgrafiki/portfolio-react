@@ -73,6 +73,11 @@
             line-height: .85;
             margin: 0;
             
+            > span
+            {
+                display: block;
+            }
+            
             > span:not(.font-light)
             {
                 display: block;

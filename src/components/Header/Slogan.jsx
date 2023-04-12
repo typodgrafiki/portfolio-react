@@ -60,7 +60,6 @@ function Slogan() {
     return (
         <h1>
             <span className="font-light">WE CREATE</span>
-            <br />
             AWESOME
             <span className={fadeOut ? 'fadeout' : ''}>
                 {currentText}
