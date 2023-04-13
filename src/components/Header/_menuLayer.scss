@@ -1,4 +1,110 @@
 .menu-layer
 {
     position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #5b4693;
+    transition: all .3s ease;
+    top: 0;
+    left: 0;
+    inset: 0;
+    z-index: 10;
+    
+    .text-muted 
+    {
+        opacity: .6;
+    }
+    
+    .right-column 
+    {
+        flex-grow: 1;
+        padding: 2% 3%;
+        
+        .line-top
+        {
+            padding-right: 60px;
+        }
+        
+        .navMenu
+        {
+            font-size: clamp(2rem, 5vw, 7rem);
+            line-height: 1.1;
+            counter-reset: counterLi;
+            
+            li a:after 
+            {
+                counter-increment: counterLi;
+                content: counter(counterLi);
+                opacity: .3;
+                font-size: 1.4rem;
+                vertical-align: super;
+                margin-left: 10px;
+            }
+            
+            & + .flex 
+            {
+                gap: 20px;
+            }
+        }
+        
+        .contact-links
+        {
+            padding: 0;
+            margin: 0 0 35px;
+            list-style: none;
+            font-size: 2rem;
+            
+            a 
+            {
+                padding: 3px 0;
+                display: block;
+            }
+        }
+        
+        .social
+        {
+            display: flex;
+            gap: 5px;
+            flex-direction: column;
+            
+            a:hover 
+            {
+                opacity: .5;
+            }
+        }
+        
+        
+    }
+    
+    .left-column
+    {
+        padding: clamp(20px, 3%, 60px);
+        background-color: #453275;
+        text-align: center;
+        
+        .logo a
+        {   
+            display: flex;
+            flex-direction: column;
+            pointer-events: none;
+            
+            img
+            {
+                display: block;     
+                height: 50px; 
+                margin-left: 10px;         
+            }
+        }
+        
+        p 
+        {
+            font-size: .9rem;
+        }
+    }
+}
+
+.open + .menu-layer
+{
+    opacity: 1;
+    visibility: visible;
 }

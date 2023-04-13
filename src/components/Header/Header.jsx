@@ -1,6 +1,7 @@
 import MenuLayer from './MenuLayer'
-import logo from '../../assets/logo.svg'
+import Logo from './Logo'
 import Slogan from './Slogan'
+import NavMenu from './NavMenu'
 import Video from './Video'
 import './_header.scss'
 
@@ -8,12 +9,7 @@ function Header() {
     return (
         <div id="top" className="header flex justify-between">
             <div className="top flex justify-between">
-                <div className="logo flex align-center">
-                    <a href="#top">
-                        <img src={logo} className="logo" alt="Lorem logo" />    
-                        Lorem ipsum
-                    </a>
-                </div>
+                <Logo />
                 <MenuLayer />
             </div>
             <div className="content flex">
@@ -27,14 +23,7 @@ function Header() {
                 </div>
                 <div className="right">
                     <nav>
-                        <ul>
-                            <li><a href="#top">Home</a></li>
-                            <li><a href="#services">Our services</a></li>
-                            <li><a href="#us">About Us</a></li>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#reviews">Reviews</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
+                        <NavMenu />
                     </nav>
                     <Video />
                 </div>
