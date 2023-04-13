@@ -9,6 +9,8 @@
     left: 0;
     inset: 0;
     z-index: 10;
+    height: 0;
+    overflow: hidden;
     
     .text-muted 
     {
@@ -107,4 +109,5 @@
 {
     opacity: 1;
     visibility: visible;
+    height: 100vh;
 }

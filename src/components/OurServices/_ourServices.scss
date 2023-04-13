@@ -1,0 +1,33 @@
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+  
+.marquee 
+{
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 140px;
+    overflow-x: hidden;
+    
+    .track 
+    {
+        position: absolute;
+        white-space: nowrap;
+        will-change: transform;
+        animation: marquee 20s linear infinite;
+        font-size: 8rem;
+        font-weight: 700;
+        letter-spacing: -0.05em;
+        background: -webkit-linear-gradient(#8c98b8, #e3e2ec);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        p
+        {
+            margin: 0;
+        }
+    }
+}
+  
