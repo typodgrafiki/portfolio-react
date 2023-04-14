@@ -13,6 +13,7 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     --text: #333;
+    --gray: #aca9b3;
 }
 
 *, *:before, *:after 
@@ -126,7 +127,13 @@ video
 
 .section    
 {
-    margin: 0 15px;
+    margin: 0 6%;
+    
+    .container  
+    {
+        max-width: 1310px;
+        margin: 0 auto;
+    }
 }
 
 .ulHoverEffect
@@ -146,4 +153,29 @@ video
     {
         opacity: .4;
     }
+}
+
+.title 
+{
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--gray);
+    margin: 0 0 10px;
+    counter-reset: counterTitle;
+    
+    &:before 
+    {
+        counter-increment: counterTitle;
+        content: '0' counter(counterTitle) ' - ';
+        opacity: .6;
+        font-size: .9em;
+        font-weight: 600;
+    }
+}
+
+.subtitle 
+{
+    font-size: 2.2rem;
+    color: var(--gray);
+    margin-bottom: 40px;
 }

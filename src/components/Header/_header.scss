@@ -43,7 +43,7 @@
         width: 45px;
         height: 45px;
         position: fixed;
-        right: 4%;
+        right: calc(2.5% + 15px);
         top: 4%;
         z-index: 11;
         transition: all .3s ease;
