@@ -43,32 +43,57 @@
     {
         aspect-ratio: 1/1;
         background-color: #ddd;
+        background-size: auto 100%;
         border-radius: 6px;
         color: #fff;
         padding: 25px 30px;
         background-position: center;
-        background-size: cover;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+        
+        &:before 
+        {
+            content: '';
+            display: block;
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgb(37 39 52 / 25%) 0%, rgb(17 19 28 / 85%) 100%);
+            border-radius: inherit;
+        }
+        
+        &:hover 
+        {
+           background-size: auto 110%; 
+        }
         
         h3 
         {
-            font-weight: 500;
-            font-size: 3vw;
+            font-weight: 400;
+            font-size: clamp(20px, 2.7vw, 45px);
             line-height: 1;
+            position: relative;
+            z-index: 1;
+            transition: all .4s ease;
         }
         
         p 
         {
             line-height: 1.3;
+            position: relative;
+            left: 0;
+            transition: left .2s ease-in-out;
         }
         
         .bottom 
         {
-            border-top: 1px solid #fff;
+            border-top: 1px solid #ffffff4a;
             padding-top: 20px;
             margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             gap: 7px;
+            transition: border-color .6s ease;
             
             small
             {
@@ -76,9 +101,133 @@
                 background-color: #ffffff38;
                 border-radius: 10px;
                 padding: 3px 8px;
+                transition: all 1s ease;
             }
+        }
+        
+        .play
+        {
+            position: absolute;
+            top: 0;
+            transition: all .3s ease-in-out;
+            right: calc(-100%);
+            transform: translate(50%, 0px);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            &:hover 
+            {
+                background-color: #ac82b7;
+            }
+            
+            &:before, &:after
+            {
+                content: "";
+                display: block;
+                width: 0;
+                height: 0;
+                border-left: 0px solid #181e2f;
+                transition: all 0.4s ease;
+            }
+            
+            &:after 
+            {
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left-width: 15px;
+                margin-left: 3px;
+            }
+        }
+        
+        .content 
+        {
+            z-index: 1;
+        }
+        
+        video 
+        {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 1;
+            transition: all 1s ease;
+            
+            &.card-video--hidden
+            {
+                opacity: 0;
+            }
+        }
+        
+        &:hover, &.playing
+        {            
+            p 
+            {
+                left: calc((-100%) - 30px); 
+            }   
+             
+            .bottom 
+            {
+                border-color: transparent;
+                transition: all .5s ease;
+                
+                small
+                {
+                    background-color: #bebebe;
+                    color: rgb(17 19 28);
+                }    
+            }
+            
+            .play
+            {
+                right: 50%;
+            }
+        }
+        
+        &.playing 
+        {
+            h3 
+            {
+                font-size: 1.2vw;
+            }
+            
+            .play 
+            {
+                transform: translate(0, -100%);
+                right: 0;
+                top: 100%;
+                
+                &:before, &:after
+                {
+                    border-bottom-width: 0;
+                    border-top-width: 0;
+                    border-left-width: 5px;
+                    height: 20px;
+                    border-radius: 2px;
+                }
+                
+                &:after 
+                {
+                    
+                }
+                
+                
+            }
+            
+            .bottom 
+            {
+                transform: translate(-100%, 0);   
+            }
+        }
+        
+        h3, p, .bottom
+        {
+            position: relative;
         }
     }    
 }
-
-  
