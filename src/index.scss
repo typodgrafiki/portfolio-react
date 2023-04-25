@@ -111,6 +111,21 @@ video
     align-items: flex-end;
 }
 
+.gap20
+{
+    gap: 20px;
+}
+
+.grid 
+{
+    display: grid;
+}
+
+.grid-column2
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
 .font-light
 {
     font-weight: 300;
@@ -184,4 +199,16 @@ video
 {
     font-size: 52px;
     font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .flex-sm-60
+    {
+        flex-basis: 60%;
+    }
+    
+    .flex-sm-40
+    {
+        flex-basis: 40%;
+    }
 }
