@@ -36,6 +36,7 @@ body
     min-height: 100vh;
     scroll-behavior: smooth;
     color: var(--text);
+    counter-reset: counterTitle;
 }
 
 h1, h2, h3, h4, h5, p 
@@ -127,7 +128,7 @@ video
 
 .section    
 {
-    margin: 0 6%;
+    margin: 0 6% 4%;
     
     .container  
     {
@@ -161,7 +162,6 @@ video
     font-size: 1.5rem;
     color: var(--gray);
     margin: 0 0 10px;
-    counter-reset: counterTitle;
     
     &:before 
     {
@@ -178,4 +178,10 @@ video
     font-size: 2.2rem;
     color: var(--gray);
     margin-bottom: 40px;
+}
+
+.subtitle-big
+{
+    font-size: 52px;
+    font-weight: 500;
 }
