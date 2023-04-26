@@ -1,4 +1,6 @@
 import AboutUsBox from './AboutUsBox'
+import AboutUsVideo from './Video'
+import Slider from './AboutUsSlider'
 import './_aboutUs.scss'
 
 const data = [
@@ -26,29 +28,36 @@ const data = [
 
 function AboutUs() { 
     return (
-        <div className="about-us section">
-            <div className="container">
-                <h2 className="title">About Us</h2>
-                <div className="flex justify-between align-center">
-                    <p className="subtitle-big">We Strive Innovate</p>
-                    <button>Become a client</button>
-                </div>
-                <div className="flex gap20">
-                    <div className="flex-sm-60">
-                        <p className="subtitle"><strong>Lorem ipsum</strong> dolor, sit amet consectetur adipisicing elit. Neque repellendus facere amet, ea sapiente dolores id voluptatum sunt officia.</p>
-                        <div className="grid grid-column2 gap20">
-                            {data.map((item, index) => (
-                                <AboutUsBox 
-                                    key={index}
-                                    title={item.title}
-                                    description={item.description}
-                                    img={item.img}
-                                />               
-                            ))}
+        <div className="about-us">
+            <div className="section">
+                <div className="container">
+                    <h2 className="title">About Us</h2>
+                    <div className="flex justify-between align-center">
+                        <p className="subtitle-big">We Strive Innovate</p>
+                        <a href="#contact" className="btn btn-default">Become a client</a>
+                    </div>
+                    <div className="flex gap20">
+                        <div className="flex-sm-67">
+                            <p className="subtitle"><strong>Lorem ipsum</strong> dolor, sit amet consectetur adipisicing elit. Neque repellendus facere amet, ea sapiente dolores id voluptatum sunt officia corrupti quidem quibusdam.</p>
+                            <div className="grid grid-column2 gap20">
+                                {data.map((item, index) => (
+                                    <AboutUsBox 
+                                        key={index}
+                                        title={item.title}
+                                        description={item.description}
+                                        img={item.img}
+                                    />               
+                                ))}
+                            </div>
+                        </div>
+                        <div className="flex-sm-33 flex justify-center align-center">
+                            <AboutUsVideo />
                         </div>
                     </div>
-                    <div className="flex-sm-40">IMAGE</div>
                 </div>
+            </div>
+            <div className="slider-tumbnail">
+                <Slider />
             </div>
         </div>
     )

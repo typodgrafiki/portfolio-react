@@ -14,13 +14,13 @@
     .card
     {
         background-color: #efefef;
-        padding: 20px;
+        padding: 23px 28px 28px;
         border-radius: 15px;
         
         .big 
         {
-            font-size: 2rem;
-            font-weight: 500;
+            font-size: 2.7rem;
+            font-weight: 700;
             color: var(--text);
             margin-bottom: 10px;
         }
@@ -29,6 +29,44 @@
         {
             font-size: .93rem;
             color: #6f6d74;
+        }
+    }
+    
+    video 
+    {
+        box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        max-width: 90%;
+        height: auto;
+        margin-top: 30px;
+        pointer-events: none;
+    }
+    
+    .swiper 
+    {
+        border-top: 1px solid #e5e5e5;  
+        margin-left: -1px; 
+    }   
+     
+    .swiper-slide
+    {
+        border-left: 1px solid #e5e5e5;
+        padding: 20px;
+        min-height: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        img 
+        {
+            max-width: 100%;
+            height: auto;
+            transition: all .3s ease;
+        }
+        
+        &:hover img
+        {
+            width: 120px;    
         }
     }
 }
