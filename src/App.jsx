@@ -8,11 +8,9 @@ function App() {
     return (
         <>
             <Header />
-            <OurServices 
-                marquee={lorem} 
-            />
+            <OurServices marquee={lorem} />
             <AboutUs />
-            <Portfolio />
+            <Portfolio marquee={lorem} />
         </>
     )
 }

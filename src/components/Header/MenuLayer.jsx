@@ -42,6 +42,7 @@ function MenuLayer() {
                             <div>
                                 <ul className="contact-links ulHoverEffect">
                                     <li><a href="mailto:John@example.com">Email Us</a></li>
+                                    {/* TODO dodac rel dla blanks */}
                                     <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
                                     <li><a href="https://web.telegram.org" target="_blank">Telegram</a></li>
                                 </ul>

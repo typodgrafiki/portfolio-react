@@ -12,12 +12,8 @@ import img5 from '../../assets/images/manufacture/logo5.svg'
 import img6 from '../../assets/images/manufacture/logo6.svg'
 import img7 from '../../assets/images/manufacture/logo7.svg'
 import img8 from '../../assets/images/manufacture/logo8.svg'
-import img9 from '../../assets/images/manufacture/logo9.svg'
-import img10 from '../../assets/images/manufacture/logo10.svg'
-import img11 from '../../assets/images/manufacture/logo11.svg'
-import img12 from '../../assets/images/manufacture/logo12.svg'
 
-const dataSliders = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]
+const dataSliders = [img1, img2, img3, img4, img5, img6, img7, img8, img1, img2, img3, img4, img5, img6, img7, img8]
 
 const Slider = () => {
     return (
@@ -27,9 +23,14 @@ const Slider = () => {
                 delay: 1500,
                 disableOnInteraction: false,
             }}
+            slidesPerView={2}
+            breakpoints={{
+                480: {slidesPerView: 3},
+                991: {slidesPerView: 6},
+                1200: {slidesPerView: 8}
+            }}   
             speed={1000}
             loop={true}
-            slidesPerView={8}
         >
             {dataSliders.map((item, index) => (             
                 <SwiperSlide><img src={item} width={100} height={100} key={index} alt="image description" /></SwiperSlide>

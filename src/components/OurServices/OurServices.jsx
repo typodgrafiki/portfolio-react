@@ -1,4 +1,5 @@
 import Card from './Card'
+import Marquee from '../Modules/Marquee'
 import './_ourServices.scss'
 import image1 from '../../assets/images/rodion-kutsaiev-0VGG7cqTwCo-unsplash.jpg'
 import image2 from '../../assets/images/sunbeam-photography-B7BnSfy0Lws-unsplash.jpg'
@@ -33,13 +34,9 @@ const labels = [
 
 function OurServices({ marquee }) {
     return (
-        <>  
-            <div className="marquee">
-                <div className="track">
-                    <p className="content">{`${marquee} ${marquee}`}</p>
-                </div>
-            </div>
-            <div className="our-services section">
+        <div className="our-services">
+            <Marquee text={marquee} />
+            <div className="section">
                 <div className="container">
                     <h2 className="title">Our Services</h2>
                     <p className="subtitle">
@@ -59,7 +56,7 @@ function OurServices({ marquee }) {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

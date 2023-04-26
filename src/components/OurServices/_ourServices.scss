@@ -19,11 +19,6 @@
         will-change: transform;
         animation: marquee 20s linear infinite;
         font-size: 8rem;
-        font-weight: 700;
-        letter-spacing: -0.05em;
-        background: -webkit-linear-gradient(#8c98b8, #e3e2ec);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
         
         p
         {
@@ -34,6 +29,16 @@
 
 .our-services
 {
+    
+    .track 
+    {
+        font-weight: 700;
+        background: -webkit-linear-gradient(#8c98b8, #e3e2ec);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: -0.05em;
+    }
+    
     .flex
     {
         gap: 6px;    

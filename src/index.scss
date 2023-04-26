@@ -55,6 +55,7 @@ button, .btn
     @include transition(0.3s, ease);
     border: none;
     background-color: #efefef;
+    color: var(--text);
 }
 
 .btn-default:hover 
@@ -93,6 +94,16 @@ video
     position: relative;
 }
 
+.text-center
+{
+    text-align: center;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
 .flex
 {
     display: flex;
@@ -121,6 +132,11 @@ video
 .align-end
 {
     align-items: flex-end;
+}
+
+.gap10
+{
+    gap: 10px;
 }
 
 .gap20
@@ -162,6 +178,12 @@ video
         max-width: 1310px;
         margin: 0 auto;
     }
+}
+
+.background-dark
+{
+    background-color: #0f0f0f;
+    color: #e7e7e7;
 }
 
 .ulHoverEffect
