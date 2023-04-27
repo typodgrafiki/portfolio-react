@@ -1,5 +1,23 @@
+@keyframes iphonePortfolio {
+    0% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-30px); 
+    }
+    90% { 
+        transform: translateY(0); 
+    }
+}
+
 .portfolio 
 {
+    
+    .section 
+    {
+        margin-bottom: 5%;    
+    }
+    
     .title
     {
         font-size: clamp(4rem, 9vw, 9rem);
@@ -33,11 +51,45 @@
     .image 
     {
         flex-basis: 50%;
+        
+        img 
+        {
+            position: relative;
+            height: auto;
+            max-width: 100%;
+            
+            &:nth-child(1)
+            {
+                left: 17px;       
+                top: -50px;
+                animation: iphonePortfolio 6s ease-in-out infinite;
+            }
+            
+            &:nth-child(2)
+            {
+                right: 17px;
+                animation: iphonePortfolio 6s ease-in-out infinite;
+                animation-delay: 3s;
+            }
+        }
+    }
+    
+    .list-images 
+    {
+        grid-template-columns: repeat(5, 1fr);
+        text-align: center;
     }
     
     .btn 
     {
         white-space: nowrap;
+    }
+    
+    .sticky 
+    {
+        position: sticky;
+        // top: calc((100dvh - 600px) / 2);
+        bottom: 5%;
     }
     
     .marquee

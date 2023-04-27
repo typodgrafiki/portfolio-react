@@ -11,6 +11,7 @@ function App() {
             <OurServices marquee={lorem} />
             <AboutUs />
             <Portfolio marquee={lorem} />
+            <div className="bottom"></div>
         </>
     )
 }
