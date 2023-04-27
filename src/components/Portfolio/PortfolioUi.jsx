@@ -21,6 +21,7 @@ const uiList = [
         'image': ui2,
         'description': 'UI sample description'
     },
+    {},
     {
         'image': ui3,
         'description': 'UI sample description'
@@ -37,6 +38,7 @@ const uiList = [
         'image': ui6,
         'description': 'UI sample description'
     },
+    {},
     {
         'image': ui7,
         'description': 'UI sample description'
@@ -72,9 +74,11 @@ function PortfolioUi() {
         <>
         {uiList.map((item, index) => (    
             <div className="item" key={index}>
-                {(index >= 2 && (index + 3) % 5 === 0) ? '' : (
+                {item.image ? (
+                    
                     <img className="img-responsive" src={item.image} width={375} height={710} alt={item.description} />
-                )}
+                    
+                ) : ''}
             </div>    
         ))}        
         </>
