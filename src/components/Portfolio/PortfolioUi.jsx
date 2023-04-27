@@ -11,6 +11,8 @@ import ui10 from '../../assets/images/portfolio/ui10.png'
 import ui11 from '../../assets/images/portfolio/ui11.png'
 import ui12 from '../../assets/images/portfolio/ui12.png'
 import uiSticky from '../../assets/images/portfolio/ui12.png'
+import srcWebm from '../../assets/images/portfolio/ui-video.webm'
+import srcMp4 from '../../assets/images/portfolio/ui-video.mp4'
 
 const uiList = [
     {
@@ -57,7 +59,8 @@ const uiList = [
     },
     {
         'image': uiSticky,
-        'description': 'UI sample description video'
+        'description': 'UI sample description video',
+        'sticky': true
     },
     {
         'image': ui11,
@@ -73,12 +76,17 @@ function PortfolioUi() {
     return (
         <>
         {uiList.map((item, index) => (    
-            <div className="item" key={index}>
-                {item.image ? (
-                    
+            <div className={item.sticky ? 'item sticky' : 'item'} key={index}>
+                {item.sticky ? (
+                    <div className="video ui-bg">
+                        <video width="100%" width={375} height={710} className="img-responsive" muted autoPlay loop>
+                            <source src={srcWebm} type="video/webm" />
+                            <source src={srcMp4} type="video/mp4" />
+                        </video>
+                    </div>
+                ) : item.image ? (
                     <img className="img-responsive" src={item.image} width={375} height={710} alt={item.description} />
-                    
-                ) : ''}
+                ) : ''}              
             </div>    
         ))}        
         </>
