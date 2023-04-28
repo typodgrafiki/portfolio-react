@@ -1,18 +1,18 @@
-import ui1 from '../../assets/images/portfolio/ui1.png'
-import ui2 from '../../assets/images/portfolio/ui2.png'
-import ui3 from '../../assets/images/portfolio/ui3.png'
-import ui4 from '../../assets/images/portfolio/ui4.png'
-import ui5 from '../../assets/images/portfolio/ui5.png'
-import ui6 from '../../assets/images/portfolio/ui6.png'
-import ui7 from '../../assets/images/portfolio/ui7.png'
-import ui8 from '../../assets/images/portfolio/ui8.png'
-import ui9 from '../../assets/images/portfolio/ui9.png'
-import ui10 from '../../assets/images/portfolio/ui10.png'
-import ui11 from '../../assets/images/portfolio/ui11.png'
-import ui12 from '../../assets/images/portfolio/ui12.png'
-import uiSticky from '../../assets/images/portfolio/ui12.png'
-import srcWebm from '../../assets/images/portfolio/ui-video.webm'
-import srcMp4 from '../../assets/images/portfolio/ui-video.mp4'
+import ui1 from '../../../assets/images/portfolio/ui1.png'
+import ui2 from '../../../assets/images/portfolio/ui2.png'
+import ui3 from '../../../assets/images/portfolio/ui3.png'
+import ui4 from '../../../assets/images/portfolio/ui4.png'
+import ui5 from '../../../assets/images/portfolio/ui5.png'
+import ui6 from '../../../assets/images/portfolio/ui6.png'
+import ui7 from '../../../assets/images/portfolio/ui7.png'
+import ui8 from '../../../assets/images/portfolio/ui8.png'
+import ui9 from '../../../assets/images/portfolio/ui9.png'
+import ui10 from '../../../assets/images/portfolio/ui10.png'
+import ui11 from '../../../assets/images/portfolio/ui11.png'
+import ui12 from '../../../assets/images/portfolio/ui12.png'
+import uiSticky from '../../../assets/images/portfolio/ui12.png'
+import srcWebm from '../../../assets/images/portfolio/ui-video.webm'
+import srcMp4 from '../../../assets/images/portfolio/ui-video.mp4'
 
 const uiList = [
     {
@@ -79,7 +79,7 @@ function PortfolioUi() {
             <div className={item.sticky ? 'item sticky' : 'item'} key={index}>
                 {item.sticky ? (
                     <div className="video ui-bg">
-                        <video width="100%" width={375} height={710} className="img-responsive" muted autoPlay loop>
+                        <video width={375} height={710} className="img-responsive" muted autoPlay loop>
                             <source src={srcWebm} type="video/webm" />
                             <source src={srcMp4} type="video/mp4" />
                         </video>

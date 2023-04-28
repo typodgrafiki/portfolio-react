@@ -1,8 +1,8 @@
-import Marquee from '../Modules/Marquee'
+import Marquee from '../../Modules/Marquee'
 import PortfolioUi from './PortfolioUi'
 import './_portfolio.scss'
-import iphone1 from '../../assets/images/iphone1-anim.png'
-import iphone2 from '../../assets/images/iphone2-anim.png'
+import iphone1 from '../../../assets/images/iphone1-anim.png'
+import iphone2 from '../../../assets/images/iphone2-anim.png'
 
 const marquee = 'Lorem ipsum dolor sit amet consectetur'
 
@@ -25,7 +25,7 @@ function Portfolio() {
                     </div>
                 </div>
             </div>
-            <div className="list-images grid justify-center gap10 align-end flex-wrap">
+            <div className="list-images grid justify-center align-end flex-wrap">
                 <PortfolioUi />
             </div>
         </div>

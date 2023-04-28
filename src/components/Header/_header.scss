@@ -35,6 +35,26 @@
         }
     }
     
+    .menu-top   
+    {
+        position: fixed;
+        right: calc(2.5% + 15px);
+        top: 4%;
+        z-index: 11;
+        
+        a 
+        {
+            display: block;
+            padding: 10px;
+            margin-right: 10px;
+            
+            &:hover 
+            {
+                opacity: 0.6;
+            }
+        }
+    }
+    
     .menu
     {
         background-color: #cac2d64a;
@@ -42,10 +62,6 @@
         padding: 0;
         width: 45px;
         height: 45px;
-        position: fixed;
-        right: calc(2.5% + 15px);
-        top: 4%;
-        z-index: 11;
         transition: all .3s ease;
         
         > span 

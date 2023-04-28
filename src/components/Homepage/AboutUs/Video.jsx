@@ -1,5 +1,5 @@
-import srcWebm from '../../assets/phone-scroll.webm'
-import srcMp4 from '../../assets/phone-scroll.mp4'
+import srcWebm from '../../../assets/phone-scroll.webm'
+import srcMp4 from '../../../assets/phone-scroll.mp4'
 
 function AboutUsVideo() {    
     return (

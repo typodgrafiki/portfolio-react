@@ -1,12 +1,12 @@
 import Card from './Card'
-import Marquee from '../Modules/Marquee'
+import Marquee from '../../Modules/Marquee'
 import './_ourServices.scss'
-import image1 from '../../assets/images/rodion-kutsaiev-0VGG7cqTwCo-unsplash.jpg'
-import image2 from '../../assets/images/sunbeam-photography-B7BnSfy0Lws-unsplash.jpg'
-import image3 from '../../assets/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg'
-import video1 from '../../assets/pexels-t-leish-5310323-426x240-25fps.mp4'
-import video2 from '../../assets/pexels-cottonbro-studio-7170781-426x226-25fps.mp4'
-import video3 from '../../assets/pexels-cottonbro-studio-6153459-960x506-25fps.mp4'
+import image1 from '../../../assets/images/rodion-kutsaiev-0VGG7cqTwCo-unsplash.jpg'
+import image2 from '../../../assets/images/sunbeam-photography-B7BnSfy0Lws-unsplash.jpg'
+import image3 from '../../../assets/images/nubelson-fernandes--Xqckh_XVU4-unsplash.jpg'
+import video1 from '../../../assets/pexels-t-leish-5310323-426x240-25fps.mp4'
+import video2 from '../../../assets/pexels-cottonbro-studio-7170781-426x226-25fps.mp4'
+import video3 from '../../../assets/pexels-cottonbro-studio-6153459-960x506-25fps.mp4'
 
 const labels = [
     {
