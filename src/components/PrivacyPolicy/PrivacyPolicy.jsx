@@ -1,5 +1,3 @@
-// TODO login page
-
 import Logo from "../Header/Logo"
 import MenuLayer from "../Header/MenuLayer"
 import '../Header/_header.scss'

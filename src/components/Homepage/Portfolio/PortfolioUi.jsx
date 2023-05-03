@@ -17,7 +17,8 @@ import srcMp4 from '../../../assets/images/portfolio/ui-video.mp4'
 const uiList = [
     {
         'image': ui1,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui2,
@@ -26,15 +27,18 @@ const uiList = [
     {},
     {
         'image': ui3,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui4,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui5,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui6,
@@ -43,15 +47,18 @@ const uiList = [
     {},
     {
         'image': ui7,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui8,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui9,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui10,
@@ -64,11 +71,13 @@ const uiList = [
     },
     {
         'image': ui11,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     },
     {
         'image': ui12,
-        'description': 'UI sample description'
+        'description': 'UI sample description',
+        'hiddenXs': true
     }
 ]
 
@@ -76,7 +85,7 @@ function PortfolioUi() {
     return (
         <>
         {uiList.map((item, index) => (    
-            <div className={item.sticky ? 'item sticky' : 'item'} key={index}>
+            <div className={item.sticky ? 'item sticky' : item.hiddenXs ? 'item hidden-xs' : 'item'} key={index}>
                 {item.sticky ? (
                     <div className="video ui-bg">
                         <video width={375} height={710} className="img-responsive" muted autoPlay loop>

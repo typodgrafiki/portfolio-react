@@ -1,108 +1,155 @@
-@media screen and (min-width: 991px) {
-    .reviews
+
+.reviews
+{
+    padding-top: 6%;
+    
+    .section 
     {
-        padding-top: 6%;
+        padding-top: 0;
+        margin-bottom: 4%;
+    }
+    
+    .left-title
+    {
+        flex-basis: 30%;
+        margin-top: 37px;
         
-        .section 
+        .subtitle 
         {
-            padding-top: 0;
-            margin-bottom: 4%;
+            font-size: 1.5rem;
+            line-height: 1.2;
+            margin-bottom: 0;
+        }
+    }
+    
+    .swiper 
+    {
+        flex-basis: 70%;
+        width: 100%;
+        position: relative;
+        
+        .swiper-wrapper 
+        {
+            height: inherit;
         }
         
-        .left-title
+        .swiper-slide 
         {
-            flex-basis: 30%;
-            margin-top: 37px;
-            
-            .subtitle 
-            {
-                font-size: 1.5rem;
-                line-height: 1.2;
-            }
+            background-color: #fff;
+            height: inherit;
+            padding-top: 20px;
         }
         
-        .swiper 
+        .quote
         {
-            flex-basis: 70%;
-            position: relative;
-            padding-left: 6.5%;
-            
-            &:before 
+            font-size: 2.1rem;   
+            font-weight: 600;
+            color: #101010;
+            line-height: 1.1;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5%;
+            margin-bottom: 3%;
+        }
+        
+        .author 
+        {
+            .name
             {
-                content: url('../../../assets/images/reviews/quote.svg');
-                font-size: 4rem;
                 font-weight: 700;
-                position: absolute;
-                z-index: 2;
-                top: -10px;
-                left: 0;
+                font-size: 1rem;                    
+                margin-bottom: 7px;
             }
             
-            .swiper-slide 
+            .workplace 
             {
-                background-color: #fff;
-                padding-top: 20px;
+                color: #ada9b3;
+                font-size: .9rem;
             }
             
-            .quote
+            .image img
             {
-                font-size: 3rem;   
-                font-weight: 600;
-                color: #101010;
-                line-height: 1.1;
-                border-bottom: 1px solid #ddd;
-                padding-bottom: 5%;
-                margin-bottom: 3%;
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+            }
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next 
+        {
+            top: auto;
+            bottom: 0;
+            width: 44px;
+            height: 44px;
+            margin: 0;
+            background: url('../../../assets/images/arrow-slider.svg') no-repeat center;
+        }
+        
+        .swiper-button-next
+        {
+            right: 0;
+            transform: rotate(180deg);
+        }
+        
+        .swiper-button-prev
+        {
+            left: auto;
+            right: 44px;
+        }
+        
+        .swiper-button-prev:after,
+        .swiper-button-next:after
+        {
+            display: none;    
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .reviews .swiper
+    {
+        padding-left: 6.5%;
+               
+        &:before 
+        {
+            content: url('../../../assets/images/reviews/quote.svg');
+            font-size: 4rem;
+            font-weight: 700;
+            position: absolute;
+            z-index: 2;
+            top: -10px;
+            left: 0;       
+        }
+        
+        .quote
+        {
+            font-size: 3rem;   
+        }
+        
+        .author 
+        {
+            .name 
+            {
+                font-size: 1.4rem;  
             }
             
-            .author 
+            .workplace
             {
-                .name
-                {
-                    font-weight: 700;
-                    font-size: 1.4rem;                    
-                    margin-bottom: 7px;
-                }
-                
-                .workplace 
-                {
-                    color: #ada9b3;
-                }
-                
-                .image img
-                {
-                    border-radius: 50%;
-                }
+                font-size: 1rem;
             }
             
-            .swiper-button-prev,
-            .swiper-button-next 
+            .image img
             {
-                top: auto;
-                bottom: 30px;
-                width: 44px;
-                height: 44px;
-                margin: 0;
-                background: url('../../../assets/images/arrow-slider.svg') no-repeat center;
+                width: 100px;
+                height: 100px;
             }
-            
-            .swiper-button-next
-            {
-                right: 0;
-                transform: rotate(180deg);
-            }
-            
-            .swiper-button-prev
-            {
-                left: auto;
-                right: 44px;
-            }
-            
-            .swiper-button-prev:after,
-            .swiper-button-next:after
-            {
-                display: none;    
-            }
+        }
+        
+        .swiper-button-prev,
+        .swiper-button-next 
+        {
+            top: auto;
+            bottom: 30px;
         }
     }
 }

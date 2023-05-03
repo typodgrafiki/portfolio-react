@@ -13,7 +13,7 @@ function Header() {
                     <Logo />
                     <MenuLayer />
                 </div>
-                <div className="content flex">
+                <div className="content flex-sm">
                     <div className="left">
                         <Slogan />
                         <p>
@@ -23,7 +23,7 @@ function Header() {
                         </p>
                     </div>
                     <div className="right">
-                        <nav>
+                        <nav className="hidden-xs">
                             <NavMenu />
                         </nav>
                         <Video />

@@ -107,3 +107,30 @@
         }
     }
 }
+
+@media (max-width: 767px) {
+    .footer 
+    {
+        .row 
+        {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            > div 
+            {
+                flex-basis: 45%;
+            }
+            
+            > div:nth-child(1)
+            {
+                flex-basis: 100%;
+            }
+        }
+    
+        .copyright 
+        {
+            border-top: 1px solid #9a999f;
+            padding-top: 15px;
+        }
+    }
+}

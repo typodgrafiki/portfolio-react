@@ -5,7 +5,7 @@ const Reviews = () => {
     return (
         <div id="reviews" className="reviews">
             <div className="section">
-                <div className="flex width100 gap20">
+                <div className="flex width100 gap20 flex-direction-column-xs">
                     <div className="left-title">
                         <h2 className="title">Reviews</h2>
                         <p className="subtitle">

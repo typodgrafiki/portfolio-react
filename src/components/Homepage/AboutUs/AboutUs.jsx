@@ -32,11 +32,11 @@ function AboutUs() {
             <div className="section">
                 <div className="container">
                     <h2 className="title">About Us</h2>
-                    <div className="flex justify-between align-center">
+                    <div className="flex justify-between align-start align-center-sm flex-direction-column-xs">
                         <p className="subtitle-big">We Strive Innovate</p>
                         <a href="#reviews" className="btn btn-default">Show reviews</a>
                     </div>
-                    <div className="flex gap20">
+                    <div className="flex gap20 flex-direction-column-xs">
                         <div className="flex-sm-67">
                             <p className="subtitle"><strong>Lorem ipsum</strong> dolor, sit amet consectetur adipisicing elit. Neque repellendus facere amet, ea sapiente dolores id voluptatum sunt officia corrupti quidem quibusdam.</p>
                             <div className="grid grid-column2 gap20">

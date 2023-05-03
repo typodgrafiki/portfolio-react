@@ -12,19 +12,24 @@ function MenuLayer() {
         setIsOpen(!isOpen)
     }
     
+    const closeMenu = () => {
+        setIsOpen(0)
+    }
+    
+    const handleKeyDown = (event) => {
+        if (event.keyCode === 27) {
+            closeMenu()
+        }
+    }
+    
     useEffect(() => {
-        const handleKeyDown = (event) => {
-            if (event.keyCode === 27) {
-                setIsOpen(0)
-            }
-        };
+        
         document.addEventListener("keydown", handleKeyDown);
         return () => {
             document.removeEventListener("keydown", handleKeyDown);
         };
+        
     })
-    
-    // TODO zamknąć po kliknieciu pozycji
     
     return (
         <>
@@ -40,19 +45,16 @@ function MenuLayer() {
                     <div className="line-top flex justify-between">
                         <p className="text-muted">Navigation</p>
                     </div>
-                    <div className="flex justify-between align-end">
-                        <NavMenu />
+                    <div className="flex justify-between align-end">``
+                        <NavMenu closeMenuFn={closeMenu} />
                         <div className="flex">
                             <div>
                                 <ul className="contact-links ulHoverEffect">
                                     <li><a href="mailto:John@example.com">Email Us</a></li>
-                                    {/* TODO dodac rel dla blanks */}
-                                    <li><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
-                                    <li><a href="https://web.telegram.org" target="_blank">Telegram</a></li>
+                                    <li><a href="https://www.whatsapp.com" onClick={closeMenu} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                                    <li><a href="https://web.telegram.org" onClick={closeMenu} target="_blank" rel="noopener noreferrer">Telegram</a></li>
                                 </ul>
-                                
-                                {/* TODO dodac podstronę polityka */}
-                                <p><a href="/privacy-policy" className="link">Privacy Policy & Cookies</a></p>
+                                <p><a href="/privacy-policy" className="link" onClick={closeMenu}>Privacy Policy & Cookies</a></p>
                                 <p className="text-muted">&#169; Copyright</p>
                             </div>
                             <Social />

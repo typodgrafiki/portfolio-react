@@ -42,7 +42,7 @@ function OurServices({ marquee }) {
                     <p className="subtitle">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque repellendus facere amet, ea sapiente dolores id voluptatum sunt officia corrupti quidem quibusdam quisquam molestias! Ea nobis enim iste accusantium illo.
                     </p>
-                    <div className=" flex">
+                    <div className="flex flex-direction-column-xs">
                         {labels.map((item, index) => (
                             <Card
                                 key={index}

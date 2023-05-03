@@ -11,6 +11,11 @@
         }
     }
     
+    .subtitle-big 
+    {
+        margin-bottom: 17px;
+    }
+    
     .card
     {
         background-color: #efefef;
@@ -46,6 +51,7 @@
     {
         border-top: 1px solid #e5e5e5;  
         margin-left: -1px; 
+        margin-top: 40px;
     }   
      
     .swiper-slide
@@ -68,5 +74,12 @@
         {
             width: 120px;    
         }
+    }
+}
+
+@media (min-width: 768px) {
+    .subtitle-big 
+    {
+        margin-bottom: 0;
     }
 }

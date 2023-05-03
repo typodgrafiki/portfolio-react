@@ -24,9 +24,6 @@ const Footer = () => {
         window.addEventListener("scroll", handleScroll);
         return () => {window.removeEventListener("scroll", handleScroll)};
     }, []);
-    
-    // TODO stopka widoczna dopiero po przescrollowaniu
-
   
     return (
         <div className="footer">
@@ -39,14 +36,14 @@ const Footer = () => {
                 <div className="flex row gap20">
                     <div>
                         <h3>Lorem ipsum dolor sit amet consectetur adipisicing.</h3>    
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam labore at ad numquam animi nam harum. Laboriosam, ex. Aperiam, beatae.</p>
+                        <p className="hidden-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam labore at ad numquam animi nam harum. Laboriosam, ex. Aperiam, beatae.</p>
                         <a href="#reviews" className="btn btn-default">Show reviews</a>
-                        <p>
+                        <p className="hidden-xs">
                             Don’t like the forms? Drop us a line via email.<br />
                             <a href="mailto:fakeJohn@example.com" className="link">fakeJohn@example.com</a>
                         </p>
                     </div>
-                    <div>
+                    <div className="hidden-xs">
                         <p className="h4">Contact us</p>
                         <p>
                             Our Email<br />
@@ -63,16 +60,16 @@ const Footer = () => {
                     <div>
                         <p className="h4">Contact us</p>
                         <ul className="navMenu ulHoverEffect">
-                            <li><a href="https://www.whatsapp.com/" target="_blank">WhatsApp</a></li>
-                            <li><a href="https://web.telegram.org/" target="_blank">Telegram</a></li>
-                            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+                            <li><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                            <li><a href="https://web.telegram.org/" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+                            <li><a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
                         </ul>
                     </div>
                     <div>
                         <NavMenu />
                     </div>
                 </div>
-                <div className="flex justify-between">
+                <div className="flex justify-between copyright">
                     <p>© Lorem ipsum 2023. All rights reserved.</p>
                     <a id="toTop" href="#start" className="link">
                         Back to the top
