@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
 import NavMenu from './NavMenu'
 import Logo from './Logo'
 import Social from './Social'
@@ -25,10 +24,11 @@ function MenuLayer() {
         };
     })
     
+    // TODO zamknąć po kliknieciu pozycji
+    
     return (
         <>
             <div className={`menu-top flex align-center ${isOpen ? 'open' : ''}`}>
-                <Link to="/login">Login</Link>
                 <button className={`menu relative ${isOpen ? 'open' : ''}`} onClick={handleClick}><span></span><span></span><span></span></button>    
             </div>
             <div className="menu-layer flex">

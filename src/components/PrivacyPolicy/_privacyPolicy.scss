@@ -1,0 +1,22 @@
+.webpage
+{
+    .header
+    {
+        height: 100px;       
+    }
+    
+    .content 
+    {
+        margin-bottom: 40px;
+        
+        h1, h2 
+        {
+            margin: 24px 0 15px;
+        }
+        
+        p 
+        {
+            line-height: 1.3;
+        }   
+    }
+}

@@ -8,7 +8,7 @@ const marquee = 'Lorem ipsum dolor sit amet consectetur'
 
 function Portfolio() {
     return (
-        <div className="portfolio background-dark relative">
+        <div id="portfolio" className="portfolio background-dark relative">
             <Marquee text={marquee} />
             <div className="section relative">
                 <div className="flex justify-between align-center">
@@ -21,7 +21,7 @@ function Portfolio() {
                         <img src={iphone2} width={201} height={572} alt='image iphone 2' />
                     </div>
                     <div className="text2 text-right">
-                        <a href="#contact" className="btn btn-default">Contact</a>
+                        <a href="#reviews" className="btn btn-default">Show reviews</a>
                     </div>
                 </div>
             </div>

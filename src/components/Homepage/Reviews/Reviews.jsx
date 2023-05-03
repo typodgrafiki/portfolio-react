@@ -3,7 +3,7 @@ import './_reviews.scss'
 
 const Reviews = () => {
     return (
-        <div className="reviews">
+        <div id="reviews" className="reviews">
             <div className="section">
                 <div className="flex width100 gap20">
                     <div className="left-title">

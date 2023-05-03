@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Login from './components/Login/Login'
+import PrivacyPolicy from './components/PrivacyPolicy/PrivacyPolicy'
 import Homepage from './components/Homepage/Homepage'
+import Footer from './components/Footer/Footer';
 import './index.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -10,8 +11,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Router>
             <Routes>
                 <Route exact path="/" element={<Homepage/>} />
-                <Route path="/login" element={<Login/>} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             </Routes>
         </Router>
+        <Footer />
     </React.StrictMode>,
 )

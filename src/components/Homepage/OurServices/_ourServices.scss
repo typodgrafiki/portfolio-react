@@ -1,6 +1,5 @@
 .our-services
 {
-    
     .track 
     {
         font-weight: 700;
@@ -8,6 +7,11 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         letter-spacing: -0.05em;
+    }
+    
+    .section 
+    {
+        padding-top: 38px;
     }
     
     .flex

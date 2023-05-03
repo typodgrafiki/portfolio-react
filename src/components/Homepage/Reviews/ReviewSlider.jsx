@@ -20,7 +20,7 @@ const dataSliders = [
     },
     {
         'img': img2,
-        'quote': 'Cum quae ullam assumenda praesentium quaerat, voluptas optio possimus eligendi rerum dignissimos recusandae soluta quos neque, fuga vel!',
+        'quote': 'Cum quae ullam assumenda praesentium quaerat, voluptas optio possimus eligendi rerum dignissimos recusandae soluta quos neque!',
         'name': 'Anna Novak',
         'workplace': 'CEO Amazon'        
     },
@@ -32,7 +32,7 @@ const dataSliders = [
     },
     {
         'img': img4,
-        'quote': 'Ratione temporibus non obcaecati excepturi aliquid eligendi, alias consequatur necessitatibus et quibusdam accusamus.',
+        'quote': 'Ratione temporibus non obcaecati excepturi aliquid eligendi, alias consequatur necessitatibus et quibusdam accusamus culpa let.',
         'name': 'John Albert',
         'workplace': 'Allegro Founder'        
     }

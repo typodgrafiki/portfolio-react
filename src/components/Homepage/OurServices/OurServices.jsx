@@ -36,7 +36,7 @@ function OurServices({ marquee }) {
     return (
         <div className="our-services">
             <Marquee text={marquee} />
-            <div className="section">
+            <div id="services" className="section">
                 <div className="container">
                     <h2 className="title">Our Services</h2>
                     <p className="subtitle">

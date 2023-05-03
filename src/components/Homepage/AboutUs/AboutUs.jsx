@@ -28,13 +28,13 @@ const data = [
 
 function AboutUs() { 
     return (
-        <div className="about-us">
+        <div id="us" className="about-us">
             <div className="section">
                 <div className="container">
                     <h2 className="title">About Us</h2>
                     <div className="flex justify-between align-center">
                         <p className="subtitle-big">We Strive Innovate</p>
-                        <a href="#contact" className="btn btn-default">Become a client</a>
+                        <a href="#reviews" className="btn btn-default">Show reviews</a>
                     </div>
                     <div className="flex gap20">
                         <div className="flex-sm-67">
