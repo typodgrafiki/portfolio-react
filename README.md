@@ -1,25 +1,25 @@
-# Portfolio &#8226; Projekt React
+# Portfolio &#8226; React Project
 
-## Autor
+## Author
 - [Grzegorz_Kocik]
 
-### Wprowadzenie
-Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując React. Single Page stworzona za pomocą [Vite]. Design zaczerpnięty ze strony [dribble]
+### Introduction
+Project is one of the portfolio pages created using React. It is a single page created with [vite]. The design was inspired by the [dribble] website.
 
-### Technologie
+### Technologies
 - HTML
 - CSS/SCSS
 - JavaScript
 - React
 
-### Użyte biblioteki
+### Used Libraries
 ##### Production
 - [swiper] 
 ##### Developers
 - [vite]
 - [sass]
 
-#### Spis sekcji
+#### List of Sections
 - Header
 - Our Services
 - About Us
@@ -27,7 +27,7 @@ Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując React. Singl
 - Reviews
 - Footer
 
-#### Źródła
+#### Sources
 - [dribble]
 
 [Grzegorz_Kocik]: <https://github.com/typodgrafiki>
