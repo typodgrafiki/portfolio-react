@@ -32,3 +32,6 @@ Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując React. Singl
 
 [Grzegorz_Kocik]: <https://github.com/typodgrafiki>
 [dribble]: <https://dribbble.com/shots/18358364-Blog-Page-Light>
+[vite]: <https://vitejs.dev/>
+[sass]: <https://sass-lang.com/>
+[swiper]: <https://swiperjs.com/> 
