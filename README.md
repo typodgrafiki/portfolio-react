@@ -13,11 +13,11 @@ Projekt jest jedną ze stron portfolio. Zrealizowany wykorzystując React. Singl
 - React
 
 ### Użyte biblioteki
-- Production
--- [swiper] 
-- Developers
--- [vite]
--- [sass]
+##### Production
+- [swiper] 
+##### Developers
+- [vite]
+- [sass]
 
 #### Spis sekcji
 - Header
