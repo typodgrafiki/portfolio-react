@@ -17,8 +17,8 @@ function Portfolio() {
                 <div className="flex justify-between align-center flex-direction-column-xs">
                     <p className="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, illum!</p>
                     <div className="image flex justify-center">
-                        <img src={iphone1} width={209} height={572} alt='image iphone 1' />
-                        <img src={iphone2} width={201} height={572} alt='image iphone 2' />
+                        <img src={iphone1} width={209} height={572} alt='image iphone 1' loading="lazy" />
+                        <img src={iphone2} width={201} height={572} alt='image iphone 2' loading="lazy" />
                     </div>
                     <div className="text2 text-right hidden-xs">
                         <a href="#reviews" className="btn btn-default">Show reviews</a>

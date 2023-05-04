@@ -33,7 +33,7 @@ const Slider = () => {
             loop={true}
         >
             {dataSliders.map((item, index) => (             
-                <SwiperSlide><img src={item} width={100} height={100} key={index} alt="image description" /></SwiperSlide>
+                <SwiperSlide key={index}><img src={item} width={100} height={100} alt="image description" loading="lazy" /></SwiperSlide>
             ))}
         </Swiper>
     );

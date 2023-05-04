@@ -94,7 +94,7 @@ function PortfolioUi() {
                         </video>
                     </div>
                 ) : item.image ? (
-                    <img className="img-responsive" src={item.image} width={375} height={710} alt={item.description} />
+                    <img className="img-responsive" src={item.image} width={375} height={710} alt={item.description} loading="lazy" />
                 ) : ''}              
             </div>    
         ))}        

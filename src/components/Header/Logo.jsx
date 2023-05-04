@@ -4,7 +4,7 @@ function Logo() {
     return (
         <div className="logo">
             <a href="/" className="flex align-center">
-                <img src={logo} className="logo" alt="Lorem logo" />    
+                <img src={logo} className="logo" alt="Lorem logo" loading="lazy" />    
                 Lorem ipsum
             </a>
         </div>

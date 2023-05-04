@@ -53,7 +53,7 @@ const ReviewsSlider = () => {
                     </div>
                     <div className="author flex align-center gap20">
                         <div className="image">
-                            <img src={item.img} width={100} height={100} key={index} alt="image description" />
+                            <img src={item.img} width={100} height={100} key={index} alt="image description" loading="lazy" />
                         </div>
                         <div className="caption">
                             <div className="name">{item.name}</div>

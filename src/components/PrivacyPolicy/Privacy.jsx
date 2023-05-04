@@ -6,6 +6,7 @@ import './_privacyPolicy.scss'
 
 function PrivacyPolicy() {
     return (
+        <>
         <div className="webpage">
             <div className="header top flex justify-between">
                 <Logo />
@@ -30,6 +31,7 @@ function PrivacyPolicy() {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

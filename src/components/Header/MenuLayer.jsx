@@ -23,12 +23,10 @@ function MenuLayer() {
     }
     
     useEffect(() => {
-        
         document.addEventListener("keydown", handleKeyDown);
         return () => {
             document.removeEventListener("keydown", handleKeyDown);
         };
-        
     })
     
     return (
@@ -45,7 +43,7 @@ function MenuLayer() {
                     <div className="line-top flex justify-between">
                         <p className="text-muted">Navigation</p>
                     </div>
-                    <div className="flex justify-between align-end">``
+                    <div className="flex justify-between align-end">
                         <NavMenu closeMenuFn={closeMenu} />
                         <div className="flex">
                             <div>
@@ -54,7 +52,7 @@ function MenuLayer() {
                                     <li><a href="https://www.whatsapp.com" onClick={closeMenu} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
                                     <li><a href="https://web.telegram.org" onClick={closeMenu} target="_blank" rel="noopener noreferrer">Telegram</a></li>
                                 </ul>
-                                <p><a href="/privacy-policy" className="link" onClick={closeMenu}>Privacy Policy & Cookies</a></p>
+                                {/* <p><a href="/privacy" className="link" onClick={closeMenu}>Privacy Policy & Cookies</a></p> */}
                                 <p className="text-muted">&#169; Copyright</p>
                             </div>
                             <Social />
