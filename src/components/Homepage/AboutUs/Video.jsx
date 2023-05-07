@@ -1,7 +1,7 @@
-import srcWebm from '../../../assets/phone-scroll.webm'
-import srcMp4 from '../../../assets/phone-scroll.mp4'
+import srcWebm from "../../../assets/phone-scroll.webm"
+import srcMp4 from "../../../assets/phone-scroll.mp4"
 
-function AboutUsVideo() {    
+function AboutUsVideo() {
     return (
         <video className="video" width="290" height="529" loop muted autoPlay>
             <source src={srcWebm} type="video/webm" />

@@ -1,5 +1,5 @@
-import ReviewsSlider from './ReviewSlider';
-import './_reviews.scss'
+import ReviewsSlider from "./ReviewSlider"
+import "./_reviews.scss"
 
 const Reviews = () => {
     return (
@@ -9,14 +9,16 @@ const Reviews = () => {
                     <div className="left-title">
                         <h2 className="title">Reviews</h2>
                         <p className="subtitle">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque repellendus facere amet, ea sapiente dolores id voluptatum.
-                        </p>        
+                            Lorem ipsum dolor, sit amet consectetur adipisicing
+                            elit. Neque repellendus facere amet, ea sapiente
+                            dolores id voluptatum.
+                        </p>
                     </div>
                     <ReviewsSlider />
                 </div>
             </div>
         </div>
-    );
-};
+    )
+}
 
 export default Reviews

@@ -1,4 +1,4 @@
-function AboutUsBox({ title, description, img }) { 
+function AboutUsBox({ title, description, img }) {
     return (
         <div className="card">
             <p className="big">{title}</p>

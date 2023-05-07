@@ -1,112 +1,94 @@
-.menu-layer
-{
+.menu-layer {
     position: fixed;
     opacity: 0;
     visibility: hidden;
     background-color: #5b4693;
-    transition: all .3s ease;
+    transition: all 0.3s ease;
     top: 0;
     left: 0;
     inset: 0;
     z-index: 10;
     height: 0;
     overflow: hidden;
-    
-    .text-muted 
-    {
-        opacity: .6;
+
+    .text-muted {
+        opacity: 0.6;
     }
-    
-    .right-column 
-    {
+
+    .right-column {
         flex-grow: 1;
         padding: 2% 3%;
-        
-        .line-top
-        {
+
+        .line-top {
             padding-right: 60px;
         }
-        
-        .navMenu
-        {
+
+        .navMenu {
             font-size: clamp(2rem, 5vw, 7rem);
             line-height: 1.1;
             counter-reset: counterLi;
-            
-            li a:after 
-            {
+
+            li a:after {
                 counter-increment: counterLi;
                 content: counter(counterLi);
-                opacity: .3;
+                opacity: 0.3;
                 font-size: 1.4rem;
                 vertical-align: super;
                 margin-left: 10px;
             }
-            
-            & + .flex 
-            {
+
+            & + .flex {
                 gap: 20px;
             }
         }
-        
-        .contact-links
-        {
+
+        .contact-links {
             padding: 0;
             margin: 0 0 35px;
             list-style: none;
             font-size: 2rem;
-            
-            a 
-            {
+
+            a {
                 padding: 3px 0;
                 display: block;
             }
         }
-        
-        .social
-        {
+
+        .social {
             display: flex;
             gap: 5px;
             flex-direction: column;
-            
-            a:hover 
-            {
-                opacity: .5;
+
+            a:hover {
+                opacity: 0.5;
             }
         }
-        
-        
     }
-    
-    .left-column
-    {
+
+    .left-column {
         padding: clamp(20px, 3%, 60px);
         background-color: #453275;
         text-align: center;
-        
-        .logo a
-        {   
+
+        .logo a {
             display: flex;
             flex-direction: column;
             pointer-events: none;
-            
-            img
-            {
-                display: block;     
-                height: 50px; 
-                margin-left: 10px;         
+
+            img {
+                display: block;
+                height: 50px;
+                margin-left: 10px;
             }
         }
-        
-        p 
-        {
-            font-size: .9rem;
+
+        p {
+            font-size: 0.9rem;
         }
     }
 }
 
-.open + .menu-layer
-{
+.open + .menu-layer {
     opacity: 1;
     visibility: visible;
     height: 100vh;

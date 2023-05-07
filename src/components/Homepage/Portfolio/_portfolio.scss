@@ -1,34 +1,29 @@
 @keyframes iphonePortfolio {
-    0% { 
-        transform: translateY(0); 
+    0% {
+        transform: translateY(0);
     }
-    50% { 
-        transform: translateY(-30px); 
+    50% {
+        transform: translateY(-30px);
     }
-    90% { 
-        transform: translateY(0); 
+    90% {
+        transform: translateY(0);
     }
 }
 
-.portfolio 
-{
-    
-    .section 
-    {
-        margin-bottom: 5%;  
-        padding-top: 0;  
+.portfolio {
+    .section {
+        margin-bottom: 5%;
+        padding-top: 0;
     }
-    
-    .title
-    {
+
+    .title {
         font-size: clamp(2rem, 9vw, 9rem);
         font-weight: 300;
         color: inherit;
         margin-top: 7%;
         line-height: 1;
-        
-        &:before
-        {
+
+        &:before {
             opacity: 0;
             font-size: 0;
             text-indent: -999999;
@@ -38,80 +33,70 @@
             width: 0;
         }
     }
-    
-    .text1
-    {
-        font-weight: 600;    
+
+    .text1 {
+        font-weight: 600;
     }
-    
-    .text1, .text2 
-    {
+
+    .text1,
+    .text2 {
         flex-basis: 25%;
     }
-    
-    .image 
-    {
+
+    .image {
         flex-basis: 50%;
         max-width: 170px;
         padding-top: 100px;
-        
-        img 
-        {
+
+        img {
             position: relative;
             height: auto;
             max-width: 100%;
-            
-            &:nth-child(1)
-            {
-                left: 17px;       
+
+            &:nth-child(1) {
+                left: 17px;
                 top: -50px;
                 animation: iphonePortfolio 6s ease-in-out infinite;
             }
-            
-            &:nth-child(2)
-            {
+
+            &:nth-child(2) {
                 right: 17px;
                 animation: iphonePortfolio 6s ease-in-out infinite;
                 animation-delay: 3s;
             }
         }
     }
-    
-    .list-images 
-    {
+
+    .list-images {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
         padding: 0 10px 15px;
         gap: 13px 16px;
-        
-        img, video
-        {
+
+        img,
+        video {
             border-radius: 15px;
             pointer-events: none;
         }
     }
-    
-    .btn 
-    {
+
+    .btn {
         white-space: nowrap;
     }
-    
-    .sticky 
-    {
+
+    .sticky {
         position: sticky;
         // top: calc((100dvh - 600px) / 2);
         bottom: 5%;
     }
-    
-    .marquee
-    {
+
+    .marquee {
         height: 175px;
         position: absolute;
         top: 10%;
-        
-        .track
-        {
-            opacity: .05;
+
+        .track {
+            opacity: 0.05;
             font-weight: 500;
             font-size: 10rem;
         }
@@ -119,15 +104,12 @@
 }
 
 @media (min-width: 768px) {
-    .portfolio 
-    {    
-        .list-images 
-        {
+    .portfolio {
+        .list-images {
             grid-template-columns: repeat(5, 1fr);
         }
-        
-        .image 
-        {
+
+        .image {
             padding-top: 0;
         }
     }

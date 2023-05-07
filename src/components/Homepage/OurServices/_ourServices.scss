@@ -1,26 +1,21 @@
-.our-services
-{
-    .track 
-    {
+.our-services {
+    .track {
         font-weight: 700;
         background: -webkit-linear-gradient(#8c98b8, #e3e2ec);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         letter-spacing: -0.05em;
     }
-    
-    .section 
-    {
+
+    .section {
         padding-top: 38px;
     }
-    
-    .flex
-    {
-        gap: 6px;    
+
+    .flex {
+        gap: 6px;
     }
-    
-    .card
-    {
+
+    .card {
         aspect-ratio: 1/1;
         background-color: #ddd;
         background-size: auto 100%;
@@ -31,52 +26,50 @@
         position: relative;
         transition: all 0.2s ease-in-out;
         overflow: hidden;
-        
-        &:before 
-        {
-            content: '';
+
+        &:before {
+            content: "";
             display: block;
             position: absolute;
             inset: 0;
-            background: linear-gradient(180deg, rgb(37 39 52 / 25%) 0%, rgb(17 19 28 / 85%) 100%);
+            background: linear-gradient(
+                180deg,
+                rgb(37 39 52 / 25%) 0%,
+                rgb(17 19 28 / 85%) 100%
+            );
             border-radius: inherit;
         }
-        
-        &:hover 
-        {
-           background-size: auto 110%; 
+
+        &:hover {
+            background-size: auto 110%;
         }
-        
-        h3 
-        {
+
+        h3 {
             font-weight: 400;
             font-size: 2rem;
             line-height: 1;
             position: relative;
             z-index: 1;
-            transition: all .4s ease;
+            transition: all 0.4s ease;
         }
-        
-        p 
-        {
+
+        p {
             line-height: 1.3;
             position: relative;
             left: 0;
-            transition: left .2s ease-in-out;
+            transition: left 0.2s ease-in-out;
         }
-        
-        .bottom 
-        {
+
+        .bottom {
             border-top: 1px solid #ffffff4a;
             padding-top: 20px;
             margin-top: 20px;
             display: flex;
             flex-wrap: wrap;
             gap: 7px;
-            transition: border-color .6s ease;
-            
-            small
-            {
+            transition: border-color 0.6s ease;
+
+            small {
                 display: inline-block;
                 background-color: #ffffff38;
                 border-radius: 10px;
@@ -84,12 +77,11 @@
                 transition: all 1s ease;
             }
         }
-        
-        .play
-        {
+
+        .play {
             position: absolute;
             top: 0;
-            transition: all .3s ease-in-out;
+            transition: all 0.3s ease-in-out;
             right: calc(-100%);
             transform: translate(50%, 0px);
             height: 60px;
@@ -98,14 +90,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            &:hover 
-            {
+
+            &:hover {
                 background-color: #ac82b7;
             }
-            
-            &:before, &:after
-            {
+
+            &:before,
+            &:after {
                 content: "";
                 display: block;
                 width: 0;
@@ -113,23 +104,20 @@
                 border-left: 0px solid #181e2f;
                 transition: all 0.4s ease;
             }
-            
-            &:after 
-            {
+
+            &:after {
                 border-top: 10px solid transparent;
                 border-bottom: 10px solid transparent;
                 border-left-width: 15px;
                 margin-left: 3px;
             }
         }
-        
-        .content 
-        {
+
+        .content {
             z-index: 1;
         }
-        
-        video 
-        {
+
+        video {
             position: absolute;
             inset: 0;
             width: 100%;
@@ -137,84 +125,68 @@
             object-fit: cover;
             opacity: 1;
             transition: all 1s ease;
-            
-            &.card-video--hidden
-            {
+
+            &.card-video--hidden {
                 opacity: 0;
             }
         }
-        
-        &:hover, &.playing
-        {            
-            p 
-            {
-                left: calc((-100%) - 30px); 
-            }   
-             
-            .bottom 
-            {
+
+        &:hover,
+        &.playing {
+            p {
+                left: calc((-100%) - 30px);
+            }
+
+            .bottom {
                 border-color: transparent;
-                transition: all .5s ease;
-                
-                small
-                {
+                transition: all 0.5s ease;
+
+                small {
                     background-color: #bebebe;
                     color: rgb(17 19 28);
-                }    
+                }
             }
-            
-            .play
-            {
+
+            .play {
                 right: 50%;
             }
         }
-        
-        &.playing 
-        {
-            h3 
-            {
+
+        &.playing {
+            h3 {
                 font-size: 1rem;
             }
-            
-            .play 
-            {
+
+            .play {
                 transform: translate(0, -100%);
                 right: 0;
                 top: 100%;
-                
-                &:before, &:after
-                {
+
+                &:before,
+                &:after {
                     border-bottom-width: 0;
                     border-top-width: 0;
                     border-left-width: 5px;
                     height: 20px;
                     border-radius: 2px;
                 }
-                
-                &:after 
-                {
-                    
-                }
-                
-                
             }
-            
-            .bottom 
-            {
-                transform: translate(-100%, 0);   
+
+            .bottom {
+                transform: translate(-100%, 0);
             }
         }
-        
-        h3, p, .bottom
-        {
+
+        h3,
+        p,
+        .bottom {
             position: relative;
         }
-    }    
+    }
 }
 
 @media (min-width: 768px) {
-    .our-services .card h3
-    {
-        font-size: clamp(20px, 2.7vw, 45px);   
+    .our-services .card h3 {
+        font-size: clamp(20px, 2.7vw, 45px);
     }
 }

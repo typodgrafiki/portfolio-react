@@ -3,9 +3,9 @@
 import Logo from "../Header/Logo"
 import MenuLayer from "../Header/MenuLayer"
 import LoginForm from "./LoginForm"
-import '../Header/_header.scss'
-import '../Header/_menuLayer.scss'
-import './_login.scss'
+import "../Header/_header.scss"
+import "../Header/_menuLayer.scss"
+import "./_login.scss"
 
 function Login() {
     return (

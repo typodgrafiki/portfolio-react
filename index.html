@@ -2,38 +2,44 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <link href="/favicon-light.svg" rel="icon" type="image/svg+xml" media="(prefers-color-scheme: light)" />
-        <link href="/favicon-dark.svg" rel="icon" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
+        <link
+            href="/favicon-light.svg"
+            rel="icon"
+            type="image/svg+xml"
+            media="(prefers-color-scheme: light)"
+        />
+        <link
+            href="/favicon-dark.svg"
+            rel="icon"
+            type="image/svg+xml"
+            media="(prefers-color-scheme: dark)"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>React Portfolio &#8226; Grzegorz Kocik</title>
         <meta name="author" content="Grzegorz Kocik" />
         <meta name="description" content="React Portfolio Projekt [...]" />
-        <meta name="keywords"  content="react, portfolio, [...]" />
+        <meta name="keywords" content="react, portfolio, [...]" />
         <meta name="robots" content="noindex, nofollow" />
         <style>
-            .preload > *
-            {
+            .preload > * {
                 opacity: 0;
                 visibility: hidden;
             }
-            
-            .preload:before 
-            {
-                content: url('/src/assets/preload.svg');
-                display: block; 
+
+            .preload:before {
+                content: url("/src/assets/preload.svg");
+                display: block;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
 
-            .loaded > *
-            {
+            .loaded > * {
                 opacity: 1;
-                visibility: visible;    
-                transition: opacity .3s ease;
+                visibility: visible;
+                transition: opacity 0.3s ease;
             }
-                
         </style>
     </head>
     <body>

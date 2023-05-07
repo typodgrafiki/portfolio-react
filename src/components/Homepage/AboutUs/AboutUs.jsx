@@ -1,32 +1,33 @@
-import AboutUsBox from './AboutUsBox'
-import AboutUsVideo from './Video'
-import Slider from './AboutUsSlider'
-import './_aboutUs.scss'
+import AboutUsBox from "./AboutUsBox"
+import AboutUsVideo from "./Video"
+import Slider from "./AboutUsSlider"
+import "./_aboutUs.scss"
 
 const data = [
     {
-        'title': '+200',
-        'description': 'We have successfully completed a total of 200+ projects',
-        'img': '...'
+        title: "+200",
+        description: "We have successfully completed a total of 200+ projects",
+        img: "...",
     },
     {
-        'title': '500k',
-        'description': 'We’ve gathered dozens of reviews from the clients and + 500k reviews from their users',
-        'img': '...'
+        title: "500k",
+        description:
+            "We’ve gathered dozens of reviews from the clients and + 500k reviews from their users",
+        img: "...",
     },
     {
-        'title': '11',
-        'description': 'Years of experience',
-        'img': '...'
+        title: "11",
+        description: "Years of experience",
+        img: "...",
     },
     {
-        'title': '+34',
-        'description': 'Team members all over the world',
-        'img': '...'
-    }
+        title: "+34",
+        description: "Team members all over the world",
+        img: "...",
+    },
 ]
 
-function AboutUs() { 
+function AboutUs() {
     return (
         <div id="us" className="about-us">
             <div className="section">
@@ -34,19 +35,26 @@ function AboutUs() {
                     <h2 className="title">About Us</h2>
                     <div className="flex justify-between align-start align-center-sm flex-direction-column-xs">
                         <p className="subtitle-big">We Strive Innovate</p>
-                        <a href="#reviews" className="btn btn-default">Show reviews</a>
+                        <a href="#reviews" className="btn btn-default">
+                            Show reviews
+                        </a>
                     </div>
                     <div className="flex gap20 flex-direction-column-xs">
                         <div className="flex-sm-67">
-                            <p className="subtitle"><strong>Lorem ipsum</strong> dolor, sit amet consectetur adipisicing elit. Neque repellendus facere amet, ea sapiente dolores id voluptatum sunt officia corrupti quidem quibusdam.</p>
+                            <p className="subtitle">
+                                <strong>Lorem ipsum</strong> dolor, sit amet
+                                consectetur adipisicing elit. Neque repellendus
+                                facere amet, ea sapiente dolores id voluptatum
+                                sunt officia corrupti quidem quibusdam.
+                            </p>
                             <div className="grid grid-column2 gap20">
                                 {data.map((item, index) => (
-                                    <AboutUsBox 
+                                    <AboutUsBox
                                         key={index}
                                         title={item.title}
                                         description={item.description}
                                         img={item.img}
-                                    />               
+                                    />
                                 ))}
                             </div>
                         </div>

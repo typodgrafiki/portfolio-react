@@ -1,9 +1,9 @@
-import MenuLayer from './MenuLayer'
-import Logo from './Logo'
-import Slogan from './Slogan'
-import NavMenu from './NavMenu'
-import Video from './Video'
-import './_header.scss'
+import MenuLayer from "./MenuLayer"
+import Logo from "./Logo"
+import Slogan from "./Slogan"
+import NavMenu from "./NavMenu"
+import Video from "./Video"
+import "./_header.scss"
 
 function Header() {
     return (
@@ -19,7 +19,11 @@ function Header() {
                         <p>
                             <span className="white-btn">Latest blog from</span>
                             <span className="date">2023/04/10</span>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi veniam, nostrum voluptatibus reprehenderit cupiditate, animi porro autem exercitationem quos, et ipsum aliquam nulla provident at odit sint totam error voluptas!
+                            Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Commodi veniam, nostrum voluptatibus
+                            reprehenderit cupiditate, animi porro autem
+                            exercitationem quos, et ipsum aliquam nulla
+                            provident at odit sint totam error voluptas!
                         </p>
                     </div>
                     <div className="right">

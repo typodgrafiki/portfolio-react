@@ -1,44 +1,36 @@
-.about-us
-{
-    .subtitle 
-    {
+.about-us {
+    .subtitle {
         margin-top: 20px;
-        
-        strong 
-        {
+
+        strong {
             font-weight: inherit;
             color: var(--text);
         }
     }
-    
-    .subtitle-big 
-    {
+
+    .subtitle-big {
         margin-bottom: 17px;
     }
-    
-    .card
-    {
+
+    .card {
         background-color: #efefef;
         padding: 23px 28px 28px;
         border-radius: 15px;
-        
-        .big 
-        {
+
+        .big {
             font-size: 2.7rem;
             font-weight: 700;
             color: var(--text);
             margin-bottom: 10px;
         }
-        
-        .description
-        {
-            font-size: .93rem;
+
+        .description {
+            font-size: 0.93rem;
             color: #6f6d74;
         }
     }
-    
-    video 
-    {
+
+    video {
         box-shadow: 0 10px 50px rgba(0, 0, 0, 0.2);
         border-radius: 15px;
         max-width: 90%;
@@ -46,40 +38,35 @@
         margin-top: 30px;
         pointer-events: none;
     }
-    
-    .swiper 
-    {
-        border-top: 1px solid #e5e5e5;  
-        margin-left: -1px; 
+
+    .swiper {
+        border-top: 1px solid #e5e5e5;
+        margin-left: -1px;
         margin-top: 40px;
-    }   
-     
-    .swiper-slide
-    {
+    }
+
+    .swiper-slide {
         border-left: 1px solid #e5e5e5;
         padding: 20px;
         min-height: 160px;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-        img 
-        {
+
+        img {
             max-width: 100%;
             height: auto;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
         }
-        
-        &:hover img
-        {
-            width: 120px;    
+
+        &:hover img {
+            width: 120px;
         }
     }
 }
 
 @media (min-width: 768px) {
-    .subtitle-big 
-    {
+    .subtitle-big {
         margin-bottom: 0;
     }
 }

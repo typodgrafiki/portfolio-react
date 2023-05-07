@@ -1,48 +1,39 @@
-
-.reviews
-{
+.reviews {
     padding-top: 6%;
-    
-    .section 
-    {
+
+    .section {
         padding-top: 0;
         margin-bottom: 4%;
     }
-    
-    .left-title
-    {
+
+    .left-title {
         flex-basis: 30%;
         margin-top: 37px;
-        
-        .subtitle 
-        {
+
+        .subtitle {
             font-size: 1.5rem;
             line-height: 1.2;
             margin-bottom: 0;
         }
     }
-    
-    .swiper 
-    {
+
+    .swiper {
         flex-basis: 70%;
         width: 100%;
         position: relative;
-        
-        .swiper-wrapper 
-        {
+
+        .swiper-wrapper {
             height: inherit;
         }
-        
-        .swiper-slide 
-        {
+
+        .swiper-slide {
             background-color: #fff;
             height: inherit;
             padding-top: 20px;
         }
-        
-        .quote
-        {
-            font-size: 2.1rem;   
+
+        .quote {
+            font-size: 2.1rem;
             font-weight: 600;
             color: #101010;
             line-height: 1.1;
@@ -50,104 +41,89 @@
             padding-bottom: 5%;
             margin-bottom: 3%;
         }
-        
-        .author 
-        {
-            .name
-            {
+
+        .author {
+            .name {
                 font-weight: 700;
-                font-size: 1rem;                    
+                font-size: 1rem;
                 margin-bottom: 7px;
             }
-            
-            .workplace 
-            {
+
+            .workplace {
                 color: #ada9b3;
-                font-size: .9rem;
+                font-size: 0.9rem;
             }
-            
-            .image img
-            {
+
+            .image img {
                 border-radius: 50%;
                 width: 50px;
                 height: 50px;
             }
         }
-        
+
         .swiper-button-prev,
-        .swiper-button-next 
-        {
+        .swiper-button-next {
             top: auto;
             bottom: 0;
             width: 44px;
             height: 44px;
             margin: 0;
-            background: url('../../../assets/images/arrow-slider.svg') no-repeat center;
+            background: url("../../../assets/images/arrow-slider.svg") no-repeat
+                center;
         }
-        
-        .swiper-button-next
-        {
+
+        .swiper-button-next {
             right: 0;
             transform: rotate(180deg);
         }
-        
-        .swiper-button-prev
-        {
+
+        .swiper-button-prev {
             left: auto;
             right: 44px;
         }
-        
+
         .swiper-button-prev:after,
-        .swiper-button-next:after
-        {
-            display: none;    
+        .swiper-button-next:after {
+            display: none;
         }
     }
 }
 
 @media (min-width: 768px) {
-    .reviews .swiper
-    {
+    .reviews .swiper {
         padding-left: 6.5%;
-               
-        &:before 
-        {
-            content: url('../../../assets/images/reviews/quote.svg');
+
+        &:before {
+            content: url("../../../assets/images/reviews/quote.svg");
             font-size: 4rem;
             font-weight: 700;
             position: absolute;
             z-index: 2;
             top: -10px;
-            left: 0;       
+            left: 0;
         }
-        
-        .quote
-        {
-            font-size: 3rem;   
+
+        .quote {
+            font-size: 3rem;
         }
-        
-        .author 
-        {
-            .name 
-            {
-                font-size: 1.4rem;  
+
+        .author {
+            .name {
+                font-size: 1.4rem;
             }
-            
-            .workplace
-            {
+
+            .workplace {
                 font-size: 1rem;
             }
-            
-            .image img
-            {
+
+            .image img {
                 width: 100px;
                 height: 100px;
             }
         }
-        
+
         .swiper-button-prev,
-        .swiper-button-next 
-        {
+        .swiper-button-next {
             top: auto;
             bottom: 30px;
         }
