@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import "./_navMenu.scss"
 
 function NavMenu({ closeMenuFn }) {
@@ -33,3 +34,7 @@ function NavMenu({ closeMenuFn }) {
 }
 
 export default NavMenu
+
+NavMenu.propTypes = {
+    closeMenuFn: PropTypes.func,
+}

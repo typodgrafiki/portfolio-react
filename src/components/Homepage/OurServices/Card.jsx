@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import { useState, useEffect, useRef } from "react"
 
 function Card({ title, description, label, image, video }) {
@@ -31,7 +32,7 @@ function Card({ title, description, label, image, video }) {
         }
     }, [videoVisible, videoRef])
 
-    function cardPlayHandler(event) {
+    function cardPlayHandler() {
         setVideoVisible(!videoVisible)
         setVideoAdded(true)
     }
@@ -59,3 +60,11 @@ function Card({ title, description, label, image, video }) {
 }
 
 export default Card
+
+Card.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+    label: PropTypes.array,
+    image: PropTypes.string,
+    video: PropTypes.string,
+}

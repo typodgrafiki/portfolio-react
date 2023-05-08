@@ -1,4 +1,5 @@
-function AboutUsBox({ title, description, img }) {
+import PropTypes from "prop-types"
+function AboutUsBox({ title, description }) {
     return (
         <div className="card">
             <p className="big">{title}</p>
@@ -8,3 +9,8 @@ function AboutUsBox({ title, description, img }) {
 }
 
 export default AboutUsBox
+
+AboutUsBox.propTypes = {
+    title: PropTypes.string,
+    description: PropTypes.string,
+}

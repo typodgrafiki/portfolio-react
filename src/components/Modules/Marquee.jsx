@@ -1,3 +1,5 @@
+import PropTypes from "prop-types"
+
 function Marquee({ text }) {
     return (
         <div className="marquee">
@@ -9,3 +11,7 @@ function Marquee({ text }) {
 }
 
 export default Marquee
+
+Marquee.propTypes = {
+    text: PropTypes.string,
+}

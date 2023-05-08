@@ -121,7 +121,7 @@ const Footer = () => {
                 </div>
                 <div className="flex justify-between copyright">
                     <p>© Lorem ipsum 2023. All rights reserved.</p>
-                    <a id="toTop" href="#start" className="link">
+                    <a id="toTop" href="#start" className="link nowrap">
                         Back to the top
                         <svg
                             width="13"

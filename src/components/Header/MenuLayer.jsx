@@ -45,13 +45,15 @@ function MenuLayer() {
             <div className="menu-layer flex">
                 <div className="flex flex-column left-column justify-between">
                     <Logo />
-                    <p className="text-muted">Lorem ipsum dolor sit amet</p>
+                    <p className="text-muted hidden-xs">
+                        Lorem ipsum dolor sit amet
+                    </p>
                 </div>
                 <div className="right-column flex justify-between flex-column">
-                    <div className="line-top flex justify-between">
+                    <div className="line-top flex justify-between hidden-xs">
                         <p className="text-muted">Navigation</p>
                     </div>
-                    <div className="flex justify-between align-end">
+                    <div className="flex justify-between align-end mobile-column">
                         <NavMenu closeMenuFn={closeMenu} />
                         <div className="flex">
                             <div>

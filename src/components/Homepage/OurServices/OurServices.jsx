@@ -1,3 +1,4 @@
+import PropTypes from "prop-types"
 import Card from "./Card"
 import Marquee from "../../Modules/Marquee"
 import "./_ourServices.scss"
@@ -67,3 +68,7 @@ function OurServices({ marquee }) {
 }
 
 export default OurServices
+
+OurServices.propTypes = {
+    marquee: PropTypes.string,
+}

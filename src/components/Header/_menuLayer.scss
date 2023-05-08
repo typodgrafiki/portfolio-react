@@ -93,3 +93,42 @@
     visibility: visible;
     height: 100vh;
 }
+
+@media (max-width: 767px) {
+    .menu-layer {
+        flex-direction: column;
+
+        .left-column .logo a img {
+            margin: 0 0 5px;
+            width: 30px;
+            height: 30px;
+        }
+
+        .right-column {
+            justify-content: center;
+            text-align: center;
+
+            .navMenu li a:after {
+                display: none;
+            }
+
+            .mobile-column {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .social {
+                display: none;
+            }
+
+            .contact-links {
+                font-size: 1.2rem;
+                margin-top: 25px;
+
+                a {
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+}
